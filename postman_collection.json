@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "6e7f3018-3caf-44da-ad0b-c75933fe1a37",
+		"name": "Web APIs with mORMot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a movie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/movie/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"movie",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\": \"District 9\",\r\n    \"Director\": \"Neill Blomkamp\",\r\n    \"Released\": \"2009/08/13\",\r\n    \"RunningTime\": 112\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a movie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\": \"District IX\",\r\n    \"Director\": \"N. Blomkamp\",\r\n    \"Released\": \"2009/08/28\",\r\n    \"RunningTime\": 112\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/movie/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"movie",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a movie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/movie/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"movie",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
