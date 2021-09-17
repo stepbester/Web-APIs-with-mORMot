@@ -10,14 +10,14 @@ type
   private
     FHttpServer: TSQLHttpServer;
   public
-    constructor Create(AMovieDB: TMovieDB; APort: string);
+    constructor Create(AMovieDB: TMovieDB; const Port: AnsiString);
   end;
 
 implementation
 
-constructor TMovieWeb.Create(AMovieDB: TMovieDB; APort: string);
+constructor TMovieWeb.Create(AMovieDB: TMovieDB; const Port: AnsiString);
 begin
-  FHttpServer := TSQLHttpServer.Create(APort, [AMovieDB.DBServer]);
+  FHttpServer := TSQLHttpServer.Create(Port, [AMovieDB.DBServer]);
   FHttpServer.AccessControlAllowOrigin := '*';
 end;
 
