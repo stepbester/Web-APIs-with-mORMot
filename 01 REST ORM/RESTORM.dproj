@@ -78,9 +78,9 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\Common\MovieDB.pas"/>
         <DCCReference Include="..\Common\MovieModels.pas"/>
-        <DCCReference Include="MovieWeb.pas"/>
+        <DCCReference Include="..\Common\MovieWeb.pas"/>
+        <DCCReference Include="MovieDB.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

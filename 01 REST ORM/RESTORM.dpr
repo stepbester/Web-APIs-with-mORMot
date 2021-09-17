@@ -8,9 +8,9 @@ uses
   System.SysUtils,
   SynSQLite3Static,
   SynLog,
-  MovieDB in '..\Common\MovieDB.pas',
   MovieModels in '..\Common\MovieModels.pas',
-  MovieWeb in 'MovieWeb.pas';
+  MovieWeb in '..\Common\MovieWeb.pas',
+  MovieDB in 'MovieDB.pas';
 
 const
   Port = '8080';
