@@ -180,7 +180,118 @@
 		},
 		{
 			"name": "Interface-based services",
-			"item": []
+			"item": [
+				{
+					"name": "Call GreetingService.Hello",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/greetingservice/hello",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"greetingservice",
+								"hello"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Call GreetingService.Hello with name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/greetingservice/hello?name=Peter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"greetingservice",
+								"hello"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Peter"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Call CalculatorService.Add",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/calculatorservice/add?a=1&b=9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"calculatorservice",
+								"add"
+							],
+							"query": [
+								{
+									"key": "a",
+									"value": "1"
+								},
+								{
+									"key": "b",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Call CalculatorService.Multiply",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/calculatorservice/multiply?a=5&b=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"calculatorservice",
+								"multiply"
+							],
+							"query": [
+								{
+									"key": "a",
+									"value": "5"
+								},
+								{
+									"key": "b",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
