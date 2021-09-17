@@ -7,6 +7,8 @@ These projects depend on the [mORMot framework](https://synopse.info/fossil/wiki
 
 ## Directory structure
 
+In the root folder, there is a file called `postman_collection.json`. If you import this into [Postman](https://www.postman.com/), you will find several example requests you can use to test the running applications. These are grouped into folders that echo the directory structure of the repo itself.
+
 ### 01 REST ORM
 The project in this directory demonstrates *Option #1: The REST ORM* from my article.
 
